@@ -16,6 +16,10 @@
 		FF02CC7321CA446E00E52DCF /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF02CC7221CA446E00E52DCF /* ChannelVC.swift */; };
 		FF02CC7821CA4B3500E52DCF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF02CC7721CA4B3500E52DCF /* SWRevealViewController.m */; };
 		FF02CC7C21CA5B4600E52DCF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF02CC7B21CA5B4600E52DCF /* GradientView.swift */; };
+		FF53138421CE18C100696E58 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53138321CE18C100696E58 /* LoginVC.swift */; };
+		FF53138621CE2B5300696E58 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53138521CE2B5300696E58 /* CreateAccountVC.swift */; };
+		FF53138921CE302E00696E58 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53138821CE302E00696E58 /* AuthService.swift */; };
+		FF7EF72E21CA763600AEF721 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EF72D21CA763600AEF721 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		FF02CC7621CA4B3400E52DCF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FF02CC7721CA4B3500E52DCF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FF02CC7B21CA5B4600E52DCF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		FF53138321CE18C100696E58 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FF53138521CE2B5300696E58 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		FF53138821CE302E00696E58 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FF7EF72D21CA763600AEF721 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,8 @@
 		FF02CC5C21CA37C800E52DCF /* ChattyChat */ = {
 			isa = PBXGroup;
 			children = (
+				FF53138721CE2FF900696E58 /* Services */,
+				FF7EF72C21CA75E700AEF721 /* Utilities */,
 				FF02CC7A21CA5A8F00E52DCF /* Model */,
 				FF02CC7921CA5A6900E52DCF /* View */,
 				FF02CC7421CA4AF100E52DCF /* Supporting Files */,
@@ -104,6 +114,8 @@
 			children = (
 				FF02CC7021CA444200E52DCF /* ChatVC.swift */,
 				FF02CC7221CA446E00E52DCF /* ChannelVC.swift */,
+				FF53138321CE18C100696E58 /* LoginVC.swift */,
+				FF53138521CE2B5300696E58 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,6 +143,22 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FF53138721CE2FF900696E58 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF53138821CE302E00696E58 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FF7EF72C21CA75E700AEF721 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FF7EF72D21CA763600AEF721 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +282,13 @@
 			files = (
 				FF02CC7121CA444200E52DCF /* ChatVC.swift in Sources */,
 				FF02CC7321CA446E00E52DCF /* ChannelVC.swift in Sources */,
+				FF53138621CE2B5300696E58 /* CreateAccountVC.swift in Sources */,
+				FF53138921CE302E00696E58 /* AuthService.swift in Sources */,
 				FF02CC7C21CA5B4600E52DCF /* GradientView.swift in Sources */,
 				FF02CC5E21CA37C800E52DCF /* AppDelegate.swift in Sources */,
 				FF02CC7821CA4B3500E52DCF /* SWRevealViewController.m in Sources */,
+				FF7EF72E21CA763600AEF721 /* Constants.swift in Sources */,
+				FF53138421CE18C100696E58 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
