@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 class AuthService{
-    let instance = AuthService() //initializer
+    static let instance = AuthService() //initializer
     
     let defaults = UserDefaults.standard
     
