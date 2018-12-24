@@ -13,6 +13,8 @@ typealias completionHandler = (_ Succsess: Bool) -> ()
 //URL Constants
 let BASE_URL = "https://chattychatrr.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
+let URL_LOGIN = "\(BASE_URL)account/login"
+let URL_CREATE_USER = "\(BASE_URL)user/add"
 
 //Constants
 let TO_LOGIN = "toLogin"
@@ -23,3 +25,8 @@ let UNWIND = "unwindToChannel"
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedInKey"
 let USER_EMAIL = "userEmail"
+
+//Headers
+let HEADER = [
+    "Content-Type": "application/json; charset=utf-8"
+]

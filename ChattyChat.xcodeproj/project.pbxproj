@@ -16,6 +16,7 @@
 		FF02CC7321CA446E00E52DCF /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF02CC7221CA446E00E52DCF /* ChannelVC.swift */; };
 		FF02CC7821CA4B3500E52DCF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF02CC7721CA4B3500E52DCF /* SWRevealViewController.m */; };
 		FF02CC7C21CA5B4600E52DCF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF02CC7B21CA5B4600E52DCF /* GradientView.swift */; };
+		FF03BAF721D0D19100A59AB4 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF03BAF621D0D19100A59AB4 /* UserDataService.swift */; };
 		FF53138421CE18C100696E58 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53138321CE18C100696E58 /* LoginVC.swift */; };
 		FF53138621CE2B5300696E58 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53138521CE2B5300696E58 /* CreateAccountVC.swift */; };
 		FF53138921CE302E00696E58 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53138821CE302E00696E58 /* AuthService.swift */; };
@@ -39,6 +40,7 @@
 		FF02CC7621CA4B3400E52DCF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FF02CC7721CA4B3500E52DCF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FF02CC7B21CA5B4600E52DCF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		FF03BAF621D0D19100A59AB4 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		FF53138321CE18C100696E58 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		FF53138521CE2B5300696E58 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		FF53138821CE302E00696E58 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				FF53138821CE302E00696E58 /* AuthService.swift */,
+				FF03BAF621D0D19100A59AB4 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				FF02CC7121CA444200E52DCF /* ChatVC.swift in Sources */,
 				FF53138B21CE45CA00696E58 /* RoundedButton.swift in Sources */,
 				FF02CC7321CA446E00E52DCF /* ChannelVC.swift in Sources */,
+				FF03BAF721D0D19100A59AB4 /* UserDataService.swift in Sources */,
 				FF53138621CE2B5300696E58 /* CreateAccountVC.swift in Sources */,
 				FF53138921CE302E00696E58 /* AuthService.swift in Sources */,
 				FF02CC7C21CA5B4600E52DCF /* GradientView.swift in Sources */,
@@ -440,7 +444,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChattyChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +454,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.roya.ChattyChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChattyChat/Supporting Files/ChattyChat-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -461,7 +468,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChattyChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,6 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.roya.ChattyChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChattyChat/Supporting Files/ChattyChat-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
