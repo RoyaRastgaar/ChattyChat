@@ -28,4 +28,13 @@ class ChannelVC: UIViewController {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
     
+    
+    @IBAction func addChannelPressed(_ sender: Any) {
+        
+        let addChannel = ChannelVC()
+        addChannel.modalPresentationStyle = .custom
+        present(addChannel, animated: true, completion: nil)
+        
+    }
+    
 }

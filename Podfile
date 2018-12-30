@@ -9,6 +9,6 @@ target 'ChattyChat' do
 
   pod 'Alamofire'
   pod 'SwiftyJSON'
-  pod 'Socket.IO-Client-Swift'
+  pod 'Socket.IO-Client-Swift', '~> 12.0.0'
 
 end

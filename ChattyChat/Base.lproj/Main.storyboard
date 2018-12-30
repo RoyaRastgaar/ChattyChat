@@ -46,6 +46,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fG3-rd-JPh">
                                 <rect key="frame" x="281" y="85.5" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelPressed:" destination="2Ne-HL-1cd" eventType="touchUpInside" id="1Y4-IY-14y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBV-q5-OKc">
                                 <rect key="frame" x="111" y="592" width="51" height="35"/>
@@ -57,7 +60,7 @@
                                     <action selector="loginBtnPressed:" destination="2Ne-HL-1cd" eventType="touchUpInside" id="Y0f-xT-xyo"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Dj0-Bp-39e">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Dj0-Bp-39e" customClass="CircleImage" customModule="ChattyChat" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="op7-wh-PJZ"/>
@@ -374,7 +377,7 @@
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Az1-fb-t5P">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Az1-fb-t5P" customClass="CircleImage" customModule="ChattyChat" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="277.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="FHM-Wo-AHa"/>
@@ -392,10 +395,15 @@
                                     <action selector="pickBGColorPressed:" destination="Gtc-61-b1Y" eventType="touchUpInside" id="RIc-BZ-gtv"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cxL-E7-kOj">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3Ek-Mp-rj3" firstAttribute="top" secondItem="k4z-Vn-fhn" secondAttribute="bottom" constant="40" id="03t-Ym-aHW"/>
+                            <constraint firstItem="cxL-E7-kOj" firstAttribute="centerX" secondItem="6ZP-jI-kwP" secondAttribute="centerX" id="2La-qL-ZjI"/>
                             <constraint firstItem="k4z-Vn-fhn" firstAttribute="centerX" secondItem="6ZP-jI-kwP" secondAttribute="centerX" id="3rV-tn-Kjp"/>
                             <constraint firstItem="Fbc-Df-HSO" firstAttribute="top" secondItem="4TR-do-YDY" secondAttribute="bottom" constant="4" id="7sE-0P-lWO"/>
                             <constraint firstItem="zXO-u4-zq3" firstAttribute="centerX" secondItem="6ZP-jI-kwP" secondAttribute="centerX" id="B6I-rt-Io5"/>
@@ -408,6 +416,7 @@
                             <constraint firstItem="Inb-Bv-GQe" firstAttribute="trailing" secondItem="YNO-rL-pkw" secondAttribute="trailing" constant="16" id="pLK-xL-Y7S"/>
                             <constraint firstItem="4TR-do-YDY" firstAttribute="centerX" secondItem="6ZP-jI-kwP" secondAttribute="centerX" id="qh8-aX-5B1"/>
                             <constraint firstItem="Az1-fb-t5P" firstAttribute="top" secondItem="3Ek-Mp-rj3" secondAttribute="bottom" constant="40" id="rpF-4K-Oub"/>
+                            <constraint firstItem="cxL-E7-kOj" firstAttribute="centerY" secondItem="6ZP-jI-kwP" secondAttribute="centerY" constant="-100" id="wMQ-cX-rCa"/>
                             <constraint firstItem="Az1-fb-t5P" firstAttribute="centerX" secondItem="6ZP-jI-kwP" secondAttribute="centerX" id="xox-8M-RQf"/>
                             <constraint firstItem="YNO-rL-pkw" firstAttribute="top" secondItem="Inb-Bv-GQe" secondAttribute="top" constant="8" id="z97-AS-3nE"/>
                         </constraints>
@@ -416,6 +425,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="dti-Ak-FCi" id="JX3-HP-dhJ"/>
                         <outlet property="passTxt" destination="LCd-Dc-mf8" id="Hth-E8-r69"/>
+                        <outlet property="spinner" destination="cxL-E7-kOj" id="a7r-ty-aKZ"/>
                         <outlet property="userImg" destination="Az1-fb-t5P" id="ioP-dq-6ww"/>
                         <outlet property="userNameTxt" destination="swk-0s-edJ" id="cuS-86-Dkt"/>
                         <segue destination="dfD-hB-KVR" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegues:" id="SLJ-u4-Qh1"/>
